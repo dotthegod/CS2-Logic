@@ -1,7 +1,7 @@
 # CS2-Logic
 CS2 Entity logic document to people understand
 
-#Inputs and Outputs
+# Inputs and Outputs
 
 You will use inputs and outputs to work on the entites.
 
