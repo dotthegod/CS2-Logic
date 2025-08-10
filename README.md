@@ -230,7 +230,29 @@ In order to remove this context from the `prop1` we need to use `RemoveContext` 
 
 `ClearContext` removes all of the contexts that entity has.
 
+# Math
 
+There is 3 math entites but we use math_counter to do such things. I personally use math_counter a lot. You can use `Add`, `Divide`, `Multiply`,`SetValue` inputs for math_counter.
 
+math_counter has tons of usages. If you are making a point based map you can keep points in it.(Not between rounds), if you need to have few modes for some entites etc.
 
+I will be showing usages of it more at Systems part of the document.
+
+# Useful Console Commands
+
+-`cl_lock_camera 1/0`: It lets you lock your camera so you can do a lot of things like 2D games, menus, cutscenes and other thing
+
+# Systems
+
+In this part of document i will show the logic systems that i use when mapping.
+
+## math_counter + logic_case
+
+Sometimes you need to have few modes in something. 
+
+<img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/4d860ea1-4ce0-43ab-be82-d1d5310add27" />
+
+Like in this menu i made a menu for players to select a racing track for racing. What happens is this:
+
+When player moves it `
 
