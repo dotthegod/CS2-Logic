@@ -13,7 +13,7 @@ Outputs look like this.
 
 `My output named`: This is the place you will sellect when your output will be fired. It depends to what is your entity is but `OnUserX` ones is useable at all entites. `OnUserX` outputs can be fired with `FireUserX` input.
 
-`Target entities named`: Is your target entity that you want to input. `!self` fires for the entity itself, `!activator` fires for the who makes this output fire(like if a button pressed by a player and it has this output it the input goes to the player) (it can be different sometimes)
+`Target entities named`: Is your target entity that you want to input. `!self` fires for the entity itself, `!activator` fires for the who makes this output fire(like if a button pressed by a player and it has this output it the input goes to the player) (it can be different sometimes), `!caller` also works like !activator but prefer !activator if you dont know what you are doing, 
 
 `Via this input`: Is what do you want that entity to do. It depends on the your target entity.
 
