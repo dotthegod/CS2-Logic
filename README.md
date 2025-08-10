@@ -1,5 +1,28 @@
-# CS2-Logic
+<img width="419" height="164" alt="image" src="https://github.com/user-attachments/assets/df9e40c2-68d7-4f29-b023-5d95f121b949" /># CS2-Logic
 CS2 Entity logic document to people understand
+
+#Inputs and Outputs
+
+You will use inputs and outputs to work on the entites.
+
+## Output
+
+<img width="419" height="164" alt="image" src="https://github.com/user-attachments/assets/e648cc53-f94c-4116-94b9-9caacfad4dce" />
+
+Outputs look like this. 
+
+`My output named`: This is the place you will sellect when your output will be fired. It depends to what is your entity is but `OnUserX` ones is useable at all entites. `OnUserX` outputs can be fired with `FireUserX` input.
+
+`Target entities named`: Is your target entity that you want to input. `!self` fires for the entity itself, `!activator` fires for the who makes this output fire(like if a button pressed by a player and it has this output it the input goes to the player) (it can be different sometimes)
+
+`Via this input`: Is what do you want that entity to do. It depends on the your target entity.
+
+`With a parameter override of`: When you use some inputs you need to use a parameter to change at the target entity.
+
+`After the delay of`: Is the amount of time for it to fire this output.(PSA: If you use 0.01 and rapidly use that output it wont be fired 100 at 1 second. IIRC it fires 66 per second)
+
+`Fire once only`: This checkbox makes the output fired once in every **round**
+
 
 # Logic Entites
 There is bunch of logic entites out there but we will use few of them:
