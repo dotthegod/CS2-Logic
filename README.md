@@ -1,4 +1,4 @@
-# CS2-Logic
+<img width="206" height="105" alt="image" src="https://github.com/user-attachments/assets/902328c3-a05e-4f9e-8f99-d2d1f73a464c" /># CS2-Logic
 CS2 Entity logic document to people understand
 
 # Logic Entites
@@ -34,3 +34,16 @@ logic_compare is a logic entity that lets you compare values. It can be useful w
 
 I will be telling more about logic_compare later on the document.
 
+## logic_relay
+
+logic_relay is like a packet of outputs. If you are similar with coding you can think this as `functions`. If you want some entites to fire same output you can use `logic_relay`
+
+## logic_eventlistener
+
+logic_eventlistener is a logic entity that listens events that happen in the game like anyone dead or shots fired.
+
+!! IT CAN'T LISTEN ANYONE SPESIFIC AND USE AS !activator !!
+
+You can find events that you can use in [this website](https://wiki.alliedmods.net/Counter-Strike:_Global_Offensive_Events).
+
+(I'm not really sure if all of these work)
