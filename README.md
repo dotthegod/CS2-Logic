@@ -232,7 +232,7 @@ In order to remove this context from the `prop1` we need to use `RemoveContext` 
 
 # Math
 
-There is 3 math entites but we use math_counter to do such things. I personally use math_counter a lot. You can use `Add`, `Divide`, `Multiply`,`SetValue` inputs for math_counter.
+There is 3 math entites but we use math_counter to do such things. I personally use math_counter a lot. You can use `Add`, `Divide`, `Multiply`,`SetValue` inputs for math_counter. And you can also dynamicly input its value as parameter to another entites with `InValue` and it lets you do cool things with it.
 
 math_counter has tons of usages. If you are making a point based map you can keep points in it.(Not between rounds), if you need to have few modes for some entites etc.
 
@@ -246,6 +246,14 @@ I will be showing usages of it more at Systems part of the document.
 
 In this part of document i will show the logic systems that i use when mapping.
 
+## Trigger Cage + cl_lock_camera 1
+
+<img width="392" height="418" alt="image" src="https://github.com/user-attachments/assets/12389dd3-33e5-43d0-92a5-cd39add43140" />
+
+Trigger cage is simply a cage with trigger_multiple's surrounded. All trigger_multiple's (except the top one) teleports player when player triggers. This can be used in various things. I mentioned the `cl_lock_camera` recently. In this system we lock the camera when player is facing to what will we planning to do, for this case think it like we want person to look at the menu that player will be control. After we lock the camera of the player we teleport it to the `point_teleport` at the middle of the trigger cage.
+
+At this part we need to use `point_servercommand` to change some server settings. When the player inside the trigger cage you need to change `sv_friction` to `35` (default is 5.2) because if you don't do this when player move, it will slide if it wants to stop and it will cause player to trigger the trigger_multiple more and we don't want it. For this screenshot i used this system for driving the cars at our map [Counter Racing](https://steamcommunity.com/sharedfiles/filedetails/?id=3386799071).
+
 ## math_counter + logic_case
 
 Sometimes you need to have few modes in something. 
@@ -254,5 +262,19 @@ Sometimes you need to have few modes in something.
 
 Like in this menu i made a menu for players to select a racing track for racing. What happens is this:
 
-When player moves it `
+-It lock the players camera and teleports it to the trigger cage
+
+-At this cage if you move left it triggers the left trigger and it `Add`'s math_counter -1, and if you move left it `Add`'s math_counter 1.
+
+-On math_counter with `OutValue`(the output that fires auto when value of math_counter changes) it `InValue`'s the logic_case for triggering certain cases and displaying the tracks.
+
+<img width="794" height="411" alt="image" src="https://github.com/user-attachments/assets/2cc10736-17ad-499c-bc28-5b28db4dda39" />
+
+-On logic_case I named the cases 1 to 10 so when i `InValue` the math_counter's value, it will automatically trigger the case that math_counter's value. And in outputs of the logic_case it shows what needs to be shown and disables the rest.
+
+<img width="555" height="452" alt="image" src="https://github.com/user-attachments/assets/557878ec-af71-4407-ac35-846c094d83e0" />
+
+
+
+
 
