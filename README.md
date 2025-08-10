@@ -1,4 +1,4 @@
-<img width="206" height="105" alt="image" src="https://github.com/user-attachments/assets/902328c3-a05e-4f9e-8f99-d2d1f73a464c" /># CS2-Logic
+# CS2-Logic
 CS2 Entity logic document to people understand
 
 # Logic Entites
