@@ -1,4 +1,4 @@
-<img width="419" height="164" alt="image" src="https://github.com/user-attachments/assets/df9e40c2-68d7-4f29-b023-5d95f121b949" /># CS2-Logic
+# CS2-Logic
 CS2 Entity logic document to people understand
 
 #Inputs and Outputs
